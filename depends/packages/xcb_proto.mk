@@ -1,8 +1,11 @@
 package=xcb_proto
 $(package)_version=1.10
-$(package)_download_path=http://xcb.freedesktop.org/dist
-$(package)_file_name=xcb-proto-$($(package)_version).tar.bz2
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=xcb-proto-1.10.tar.bz2
 $(package)_sha256_hash=7ef40ddd855b750bc597d2a435da21e55e502a0fefa85b274f2c922800baaf05
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/xcb-proto-1.10.tar.bz2
+
 
 define $(package)_set_vars
   $(package)_config_opts=--disable-shared
