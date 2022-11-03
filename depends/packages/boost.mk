@@ -1,8 +1,11 @@
 package=boost
 $(package)_version=1_63_0
-$(package)_download_path=https://sourceforge.net/projects/boost/files/boost/1.63.0
-$(package)_file_name=$(package)_$($(package)_version).tar.bz2
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=boost_1_63_0.tar.bz2
 $(package)_sha256_hash=beae2529f759f6b3bf3f4969a19c2e9d6f0c503edcb2de4a61d1428519fcb3b0
+
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/boost_1_63_0.tar.bz2
 
 define $(package)_set_vars
 $(package)_config_opts_release=variant=release

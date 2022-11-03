@@ -1,8 +1,10 @@
 package=expat
-$(package)_version=2.2.0
-$(package)_download_path=https://downloads.sourceforge.net/project/expat/expat/$($(package)_version)
-$(package)_file_name=$(package)-$($(package)_version).tar.bz2
-$(package)_sha256_hash=d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
+$(package)_version=2.5.0
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=expat-2.5.0.tar.bz2
+$(package)_sha256_hash=6f0e6e01f7b30025fa05c85fdad1e5d0ec7fd35d9f61b22f34998de11969ff67
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/expat-2.5.0.tar.bz2
 
 define $(package)_set_vars
 $(package)_config_opts=--disable-static
