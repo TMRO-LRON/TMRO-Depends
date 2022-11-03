@@ -1,15 +1,18 @@
 package=native_cctools
 $(package)_version=807d6fd1be5d2224872e381870c0a75387fe05e6
-$(package)_download_path=https://github.com/TMRO-LRON/LRON-Depends/releases/download/
-$(package)_file_name=cctools-port-807d6fd1be5d2224872e381870c0a75387fe05e6/807d6fd1be5d2224872e381870c0a75387fe05e6.tar.gz
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=cctools_port_3_7_1.tar.gz
 $(package)_sha256_hash=a09c9ba4684670a0375e42d9d67e7f12c1f62581a27f28f7c825d6d7032ccc6a
 $(package)_build_subdir=cctools
 $(package)_clang_version=3.7.1
-$(package)_clang_download_path=https://github.com/TMRO-LRON/LRON-Depends/releases/download/clang%2Bllvm-3.7.1-x86_64-linux-gnu-ubuntu-14.04/
-$(package)_clang_download_file=clang+llvm-3.7.1-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-$(package)_clang_file_name=clang+llvm-3.7.1-x86_64-linux-gnu-ubuntu-14.04.tar.xz
+$(package)_clang_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_clang_download_file=clang_3_7_1.tar.xz
+$(package)_clang_file_name=clang_3_7_1.tar.xz
 $(package)_clang_sha256_hash=99b28a6b48e793705228a390471991386daa33a9717cd9ca007fcdde69608fd9
 $(package)_extra_sources=$($(package)_clang_file_name)
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/cctools_port_3_7_1.tar.gz
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/clang_3_7_1.tar.xz
 
 define $(package)_fetch_cmds
 $(call fetch_file,$(package),$($(package)_download_path),$($(package)_download_file),$($(package)_file_name),$($(package)_sha256_hash)) && \
