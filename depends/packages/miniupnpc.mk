@@ -1,8 +1,10 @@
 package=miniupnpc
 $(package)_version=2.0.20170509
-$(package)_download_path=http://miniupnp.free.fr/files
-$(package)_file_name=$(package)-$($(package)_version).tar.gz
-$(package)_sha256_hash=d3c368627f5cdfb66d3ebd64ca39ba54d6ff14a61966dbecb8dd296b7039f16a
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=miniupnpc-2.0.20170509.tar.gz
+$(package)_sha256_hash=b0dbfeafb674b7e2dbb53b9ae071031c34258d94f6224ddb6c17cc20b0f9b3d2
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/miniupnpc-2.0.20170509.tar.gz
 
 define $(package)_set_vars
 $(package)_build_opts=CC="$($(package)_cc)"

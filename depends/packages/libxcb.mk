@@ -1,9 +1,11 @@
 package=libxcb
 $(package)_version=1.10
-$(package)_download_path=http://xcb.freedesktop.org/dist
-$(package)_file_name=$(package)-$($(package)_version).tar.bz2
+$(package)_download_path=https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/
+$(package)_file_name=libxcb-1.10.tar.bz2
 $(package)_sha256_hash=98d9ab05b636dd088603b64229dd1ab2d2cc02ab807892e107d674f9c3f2d5b5
 $(package)_dependencies=xcb_proto libXau xproto
+
+#https://github.com/TMRO-LRON/TMRO-Depends/releases/download/DEPENDS/libxcb-1.10.tar.bz2
 
 define $(package)_set_vars
 $(package)_config_opts=--disable-static
