@@ -1,3 +1,5 @@
+qt_mingw32_packages=qt
+
 packages:=boost openssl libevent zeromq
 native_packages := native_ccache
 
@@ -10,7 +12,7 @@ qt_arm_linux_packages:=$(qt_x86_64_linux_packages)
 qt_aarch64_linux_packages:=$(qt_x86_64_linux_packages)
 
 qt_darwin_packages=qt
-qt_mingw32_packages=qt
+#qt_mingw32_packages=qt
 
 wallet_packages=bdb
 
